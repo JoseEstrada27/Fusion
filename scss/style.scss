@@ -121,6 +121,7 @@ header label:hover{
         position: absolute;
         background-color: #FB7E22;
         width: 100%;
+        
         margin-left: -100%;
         transition: all 0.5s;
     }
@@ -286,6 +287,51 @@ header label:hover{
         
 }
 }
+
+@media (max-width: 420px) {
+    h1 {
+        margin-right: 20%;
+    }
+    h1 a{
+        font-family: $fuenteletra;
+        font-weight: 700;
+        color: #FD5680;
+        font-size: 40px;
+        margin-left: 10px;
+        padding: 10px;
+        padding-right: 25px;
+        padding-top: 20px;
+        display: flex;
+        text-decoration: none;
+        
+    
+    }
+    header label{
+        display: block;
+
+    }
+    .menu {
+        position: absolute;
+        background-color: #FB7E22;
+        width: 100%;
+        margin-left: -100%;
+        transition: all 0.5s;
+    }
+    .menu ul{
+        flex-direction: column;
+
+    }
+    .menu li {
+        border-top: 1px solid white;
+    }
+   
+    #btn-menu:checked ~ .menu {
+        margin: 0;
+        margin-top: 430px;
+        
+}
+}
+
 
 @media (max-width: 371px) {
     h1 {
