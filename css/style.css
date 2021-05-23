@@ -69,6 +69,7 @@ header label:hover {
   font-size: 30px;
   font-family: "Roboto Mono", monospace; }
 
+/*RESPONSIVE DESING*/
 @media (max-width: 1117px) {
   h1 {
     margin-right: 36%; }
@@ -667,5 +668,3 @@ header label:hover {
             list-style-type: none;
             padding: 4px;
             background-image: url(../img/im); }
-
-/*RESPONSIVE DESING*/
