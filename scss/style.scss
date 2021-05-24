@@ -123,6 +123,7 @@ header label:hover{
 
 
 
+
 /*GALERIA*/
 .galeria__title{
     width: 100%;
@@ -240,8 +241,8 @@ header label:hover{
     height: 1070px;
     background-color: $colorbackground;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-auto-rows: 500px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 400px;
     grid-gap: 20px;
    
     .container__foto{
@@ -252,14 +253,15 @@ header label:hover{
             height: 100%;
             object-fit: cover;
             border-radius: 30px;
-            margin-left: 60px;
+            margin-left: 0px;
+           
         }
         .container__img--alter{
             width: 100%;
             height: 100%;
             object-fit: cover;
             border-radius: 30px;
-            margin-right: 60px;
+            margin-right: 0px;
         }
     }
     .container__frases{
@@ -267,8 +269,11 @@ header label:hover{
             color: white;
             text-align: center;
             font-family: $fuenteinformacion;
-            line-height: 412px;
+            line-height: 350px;
             font-size: 28px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
         }
        
         
@@ -276,14 +281,23 @@ header label:hover{
     }
 }
 
-.container__frases:nth-child(3){
-    grid-column-start: span 3;
+.container__foto:nth-child(1){
+    grid-column-start: span 2;
     
 
 }
-.container__frases:nth-child(5){
+.container__frases:nth-child(2){
     grid-column-start: span 2;
-}
+    }
+ 
+.container__frases:nth-child(3){
+        grid-column-start: span 2;
+ }   
+ .container__foto:nth-child(4){
+    grid-column-start: span 2;
+    
+
+}   
 
 
 /*CONTAINER PROMOCIONES*/
@@ -393,7 +407,7 @@ header label:hover{
 
     }
     50%{
-        font-size: 60px;
+        font-size: 55px;
     }
     100%{
         font-size: 35px;
@@ -434,6 +448,7 @@ header label:hover{
             margin-top: 15px;
             color:#FB7E22;
             font-size: 20px;
+            
         }
 
 
@@ -657,6 +672,61 @@ header label:hover{
         margin-top: 430px;
         
 }
+.quitar{
+    display: none;
+}
+.container__conocenos{
+    width: 100%;
+    height: 2000px;
+    background-color: $colorbackground;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 400px;
+    grid-gap: 0px;
+}
+.container__foto{
+        
+
+    .container__img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 30px;
+        margin-left: 0px;
+    }
+    .container__img--alter{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 30px;
+        margin-right: 0px;
+    }
+}
+.container__frases{
+    &--informacion{
+        color: white;
+        text-align: center;
+        font-family: $fuenteinformacion;
+        line-height: 412px;
+        font-size: 28px;
+    }
+   
+    
+
+}
+
+
+.container__frases:nth-child(3){
+grid-column-start: span 3;
+
+
+}
+.container__frases:nth-child(5){
+grid-column-start: span 2;
+}
+.container__frases:nth-child(7){
+    grid-column-start: span 2;
+    }
 
 }
 
@@ -846,6 +916,16 @@ header label:hover{
 
 
 }
+.container__direccion{
+    margin-top: 15px;
+    color:#FB7E22;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px;
+    padding-left: 40px;
+}
 }
 
 @media (max-width: 420px){
@@ -957,6 +1037,26 @@ header label:hover{
     grid-gap: 50px;
     position: relative;
 
+
+}
+#Reserva > p > a{
+    color:#FB7E22;
+    animation-name: animacion;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes animacion{
+    0%{
+        font-size: 35px;
+
+    }
+    50%{
+        font-size: 40px;
+    }
+    100%{
+        font-size: 35px;
+    }
 
 }
 }
