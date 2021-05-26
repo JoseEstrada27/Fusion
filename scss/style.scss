@@ -1073,6 +1073,7 @@ header label:hover{
 }
 .review__titulo{
     margin-top: 50px;
+    
 }
 .container__review{
     width: 100%;
@@ -1107,6 +1108,9 @@ input[type="submit"]{
 
 }
 @media (max-width: 436px) {
+    .review__titulo{
+        font-size: 50px !important;
+    }
     .titulo__promociones{
         font-family: $fuenteletra;
         font-weight: 700;

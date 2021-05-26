@@ -762,6 +762,8 @@ header label:hover {
     margin-bottom: 10px; } }
 
 @media (max-width: 436px) {
+  .review__titulo {
+    font-size: 50px !important; }
   .titulo__promociones {
     font-family: "Courgette", cursive;
     font-weight: 700;
